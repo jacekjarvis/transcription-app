@@ -1,0 +1,12 @@
+# Build output (rebuild via: ISCC.exe WhisperTranscriber.iss)
+dist/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# Claude Code local settings
+.claude/
+
+# Personal shortcut artifacts (created locally by Setup/create_shortcut scripts)
+*.lnk
