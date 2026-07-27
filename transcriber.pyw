@@ -299,7 +299,7 @@ class TranscriberApp:
         row1.pack(fill="x", **pad)
 
         ttk.Label(row1, text="Language:").pack(side="left")
-        self.language_var = tk.StringVar(value=LANGUAGES[0][0])
+        self.language_var = tk.StringVar(value="English")
         self.language_cb = ttk.Combobox(
             row1, textvariable=self.language_var, state="readonly", width=14,
             values=[name for name, _ in LANGUAGES])
@@ -313,7 +313,7 @@ class TranscriberApp:
         self.model_cb.pack(side="left", padx=(4, 16))
 
         ttk.Label(row1, text="Output:").pack(side="left")
-        self.format_var = tk.StringVar(value="All")
+        self.format_var = tk.StringVar(value="srt")
         self.format_cb = ttk.Combobox(
             row1, textvariable=self.format_var, state="readonly", width=7,
             values=FORMATS)

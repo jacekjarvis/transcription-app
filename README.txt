@@ -34,12 +34,14 @@ HOW TO USE IT
 1. Click "Add files..." and pick one or more audio/video files
    (or "Add folder..." to add every media file in a folder).
 2. Choose your options:
-     - Language: leave on "Auto-detect", or pick one (e.g. English) to force it.
+     - Language: defaults to "English". Switch to "Auto-detect" for
+       non-English audio, or pick another language to force it.
        ^ Forcing the language fixes the occasional wrong auto-detection
          (e.g. a short English clip detected as "Hawaiian").
      - Model:   "medium" is the default (good accuracy/speed balance on CPU).
                 "large" is more accurate but noticeably slower.
-     - Output:  "All" writes txt + srt + vtt + tsv + json. Or pick a single one.
+     - Output:  defaults to "srt" (subtitle file). "All" writes
+                txt + srt + vtt + tsv + json instead, or pick another single one.
 3. Output location: by default files are saved next to each source file.
    Untick that box to choose a single output folder.
 4. Click "Transcribe". The progress bar fills as it works, and the live
